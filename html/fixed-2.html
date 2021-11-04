@@ -1,0 +1,44 @@
+    <!DOCTYPE html>
+    <html lang="ko">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>fixed</title>
+        <style>
+        body {
+            background-color: white;
+            height: 200vh;
+        }
+        .mode {
+            width: 150px;
+            height: 30px;
+            color: #292a2d;
+            background-color: white;
+            border-radius: 20px;
+            text-align: center;
+            position: fixed;
+            bottom: 10px;
+            right: 10px;
+        }
+        </style>
+    </head>
+    <body id="body">
+        <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate
+        necessitatibus laudantium deserunt libero eligendi ad saepe maxime amet
+        totam quis ipsam error, repellendus sit alias qui numquam. Nisi, sint nam?
+        Deleniti atque animi quos quidem sit nam corporis. Fugiat cum quia
+        adipisci minima perspiciatis quam suscipit aliquam voluptatum? Sapiente
+        voluptatum culpa consequatur asperiores explicabo esse eos sed, iure quis
+        cumque?
+        </p>
+        <button onclick="다크모드()" class="mode">다크모드로 보기</button>
+    </body>
+    <script>
+        function 다크모드() {
+        document.getElementById("body").style.backgroundColor = "#292a2d";
+        document.getElementById("body").style.color = "white";
+        }
+    </script>
+    </html>
