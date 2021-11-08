@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="reset.css">
+    <style>
+      ul {
+        display: flex;
+        height: 100vh;
+        align-items: flex-start;
+      }
+
+      li {
+        width: 100px;
+        height: 100px;
+        background: pink;
+        border: 1px solid #000;
+      }
+
+      /* order default가 0이라서 나머지 안주고 하나만 0주면 12345 순서로 나옵니다!! 
+      오더값 줄때마다 양수기준 오른쪽으로 감 순서상 바뀐듯 보이지만 html은 바뀌지 않는다잉*/
+      
+      .first {
+        order: 2;
+      }      
+      .second {
+        order: 1;
+      }      
+      .third {
+        /* order: 3; */
+      }      
+      .fourth {
+        /* order: 4; */
+      }      
+
+      .fifth {
+        /* order: 5; */
+        /* align-self: flex-start; */
+        /* 개별 속성 바꿀때 좋다 */
+      }
+    </style>
+</head>
+
+<body>
+  <!-- ul>li{$}*8 -->
+    <ul>
+        <li class="first">1</li>
+        <li class="second">2</li>
+        <li class="third">3</li>
+        <li class="fourth">4</li>
+        <li class="fifth">5</li>
+    </ul>
+</body>
+
+</html>
