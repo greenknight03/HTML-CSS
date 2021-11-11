@@ -1,13 +1,82 @@
 <!DOCTYPE html>
 <html lang="ko">
+
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title></title>
+    <title>1만 시간의 법칙</title>
+    <link rel="stylesheet" href="../Basic_Resouce/css/reset.css">
+    <link rel="stylesheet" href="../Basic_Resouce/css/10000hours.css">
 </head>
+
 <body>
-    
+    <main id="app">
+        <h1 class="tit-law">
+            <img src="images-law/title.png" alt="1만 시간의 법칙" class="img-tit">
+        </h1>
+        <img src="images-law/txt_subtitle.png" alt="연습은 어제의 당신보다 당신을 더 낫게 만든다." class="img-txt">
+        <p class="txt-desc">
+            <strong>1만 시간의 법칙</strong>은<br>어떤분야의 전문가가 되기 위해서는<br> 최소한 1만 시간이 필요하다는 법칙이다.
+        </p>
+        <p class="txt-wannabe">
+            나는 <input type="text" placeholder="예)프로그래밍"> 전문가가 될것이다.
+        </p>
+        <p class="txt-time">
+            그래서 앞으로 매일 하루에 <input type="text" placeholder="예)5시간"> 시간씩 훈련할 것이다.
+        </p>
+        <button type="button" class="btn-exc">나는 며칠 동안 훈련을 해야 1만 시간이 될까?</button>
+        <section class="cont-result">
+            <h2 class="blind">결과 확인</h2>
+            <p class="txt-wannabe">
+                당신은 <strong>프로그래밍</strong> 전문가가 되기 위해서
+            </p>
+            <p class="txt-time">
+                대략 <strong>5110</strong> 일 이상 훈련하셔야 됩니다.
+            </p>
+        </section>
+        <footer class="cont-footer">
+            <img src="images-law/weniv.png" alt="weniv" class="img-footer">
+            <p class="txt-footer">본 서비스 내 이미지 및 컨텐츠의 저작권은 주식회사 WeNiv에 있습니다.</p>
+            <p class="txt-footer">
+                수정 및 재배포, 무단 도용시 법적인 문제가 발생할 수 있습니다.
+            </p>
+        </footer>
+    </main>
+    <!-- <script>
+
+        var myBtn = document.querySelector(".btn-exc");
+        var myWannabeResult = document.querySelector(".cont-result .txt-wannabe strong");
+        var myTimeResult = document.querySelector(".cont-result .txt-time strong");
+
+        myBtn.addEventListener('click', function () {
+            var myWannabe = document.querySelector(".txt-wannabe input").value;
+            var myTime = document.querySelector(".txt-time input").value;
+
+            myWannabeResult.innerText = myWannabe;
+            myTimeResult.innerText = Math.round(10000 / parseInt(myTime));
+
+        });
+
+    </script> -->
 </body>
+
 </html>
 
 <!-- &#8251; 당구장 마크 기호 -->
+<!-- 의미없는 이미지는 가상요소로 의미없는 이미지에 설명은 굳이하지 않는다. (alt:dffd) 
+강사님 가상요소 참고
+저는 이런식으로 했어요
+혜진님 1만시간의법칙 코딩 클론 해보기!!!
+-->
+<!-- 폰트가 의외로 무겁기때문에 한줄나오는 폰트는 이미지 처리하기
+구글폰트에서 한 폰트에서 weight 선택을 5개 하면 그건 5개 폰트를 다운로드한거랑 같은것
+
+웹페이지를 구현하고 나서는 꼭 웹표준검사와 css검사필요!!!
+172.30.1.26
+
+
+http://172.30.1.26:5500/%EA%B3%BC%EC%A0%9C/Basic_Resouce/10000hours.html
+이렇게 복붙하면  찐으로 모바일로 볼 수 있다 
+
+-->
