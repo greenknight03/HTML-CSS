@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>flex-5</title>
+<link rel="stylesheet" href="reset.css">
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Shippori+Antique+B1&display=swap');
+
+    * {
+        box-sizing: border-box;
+    }
+    body {
+        font-family: 'Shippori Antique B1', sans-serif;
+        padding: 10px;
+        color:black;
+    }
+
+    .wrap {
+        background-color: #0066ff;
+        border: solid 3px black;
+        border-radius: 16px;
+        /* width: 1000px; */
+    }
+
+
+    main {
+        display: flex;
+        flex-wrap: wrap;
+    }
+/* 
+    section {
+
+    } */
+
+    aside {
+        flex: 3;
+    }
+
+    section {
+        flex: 7;
+    }
+
+    .item {
+        background-color: orange;
+        border: solid 3px black;
+        border-radius: 10px;
+        padding: 5px;
+        margin: 5px;
+    }
+
+    section .sub-item {
+        background-color: rgb(71, 167, 71);
+        border: solid 3px black;
+        border-radius: 10px;
+        padding: 5px;
+        margin: 5px;
+    }
+
+    /* @media screen and (max-width: 1300px) {
+            main {
+                flex-direction: row;
+            }
+
+        }
+
+        @media screen and (max-width: 900px) {
+            main {
+                flex-direction: column;
+            }
+        } */
+</style>
+</head>
+<body>
+    <div class="wrap">
+        <header class="child item">header</header>
+        <main class="child">
+            <section class="item">section
+                <article class="sub-item">articlesequi distinctio amet enim dolor, voluptas, quidem eaque molestias magni aliquid quia!
+                Qui culpa atque vero corrupti at. Dolorem reprehenderit sit excepturi provident expedita. Reprehenderit sed ducimus illo laborum asperiores vel officia, blanditiis fugit architecto, totam praesentium minus rem neque similique? Iusto!
+                </article>
+            </section>
+            <aside class="item">aside</aside>
+        </main>
+        <footer class="child item">footer</footer>
+    </div>
+</body>
+</html>
