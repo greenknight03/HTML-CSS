@@ -7,6 +7,59 @@
     <title>flex 실전 예제</title>
     <link rel="stylesheet" href="fontawsome/css/all.css">
     <link rel="stylesheet" href="../html/reset.css">
+    <style>
+        /* reset */
+        a {
+            color: white;
+            text-decoration: none;
+        }
+
+        /* style */
+        nav {
+            background-color: #222;
+            padding: 0 15px;
+        }
+
+        .logo {
+            font-size: 20px;
+            padding: 10px;
+        }
+
+        .item {
+            padding: 10px;
+        }
+
+        a:hover {
+            color: #ccc;
+        }
+
+        .menu {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+
+        .menu li a {
+            display: block;
+            padding: 10px;
+        }
+
+        .menu li.subitem a {
+            padding-left: 20px;
+        }
+
+        .subitem {
+            /* 개발하실 때에는 block */
+            display: block;
+            /* display: none; */
+        }
+
+        .icon {
+            /* 모바일에서 보여지게 바꿔야 합니다. */
+            display: none;
+        }
+
+    </style>
 </head>
 <body>
     <nav>
@@ -43,7 +96,7 @@
             <li class="item">
                 <a href="#">CONTACT</a>
             </li>
-            <li class="toggle">
+            <li class="icon">
                 <a href="#"><i class="fas fa-bars"></i></a>
             </li>
         </ul>
