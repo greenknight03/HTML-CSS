@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>한희정연습</title>
+    <link rel="stylesheet" href="../reset.css">
+    <link rel="stylesheet" href="fontawsome/css/all.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Shippori+Antique+B1&display=swap');
+
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+        font-family: 'Shippori Antique B1', sans-serif;
+        padding: 10px;
+        color:black;
+    } 
+
+        /* reset */
+        a {
+            color: white;
+            text-decoration: none;
+        }
+
+        /* style */
+        nav {
+            background-color: #222;
+            padding: 0 15px;
+        }
+
+        .logo {
+            font-size: 20px;
+            padding: 10px;
+        }
+
+        .item {
+            padding: 10px;
+        }
+
+        a:hover {
+            color: #ccc;
+        }
+
+        .menu {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+
+        .menu li a {
+            display: block;
+            padding: 10px;
+        }
+
+        .menu li.subitem a {
+            padding-left: 20px;
+        }
+
+        .subitem {
+            /* 개발하실 때에는 block */
+            display: block;
+            /* display: none; */
+        }
+
+        .icon {
+            /* 모바일에서 보여지게 바꿔야 합니다. */
+            display: none;
+        }
+
+        .wrap {
+            background-color: #222;
+            border: 3px solid #222;
+        }
+
+        main {
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        .items {
+        background-color: thistle;
+        /* border: solid 3px black; */
+        /* border-radius: 10px; */
+        padding: 5px;
+        margin: 5px;
+    }
+
+    aside {
+        flex: 3;
+    }
+
+    section {
+        flex: 7;
+    }
+
+    section .sub-items {
+        background-color: yellow;
+        /* border: solid 3px black; */
+        /* border-radius: 10px; */
+        padding: 5px;
+        margin: 5px;
+    }
+    
+
+
+        @media screen and (max-width: 800px) {
+            .icon {
+                /* 
+                    oder를 준 이유는 아이콘 위치가 하단에 있는 것을 
+                    위로 끌어올리기 위해 
+                */
+                display: block;
+                order: 1;
+                line-height: 35px;
+                font-size: 25px;
+            }
+
+            .item {
+                order: 2;
+                width: 100%;
+                text-align: center;
+            }
+
+            .subitem {
+                /* 서브 메뉴 보이게, 안보이게 */
+                display: none;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="wrap">
+        <header>
+            <nav>
+                <ul class="menu">
+                    <li class="logo">
+                        <a href="#">LOGO</a>
+                    </li>
+                    <li class="item">
+                        <a href="#">ABOUT ME</a>
+                    </li>
+                    <li class="item">
+                        <a href="#">SKILLS</a>
+                    </li>
+                    <li class="item has-submenu">
+                        <a href="#">BLOG</a>
+                        <ul class="submenu">
+                            <li class="subitem">
+                                <a href="#">HTML</a>
+                            </li>
+                            <li class="subitem">
+                                <a href="#">CSS</a>
+                            </li>
+                            <li class="subitem">
+                                <a href="#">JAVASCRIPT</a>
+                            </li>
+                            <li class="subitem">
+                                <a href="#">INFRA</a>
+                            </li>
+                            <li class="subitem">
+                                <a href="#">NODE</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="item">
+                        <a href="#">CONTACT</a>
+                    </li>
+                    <li class="icon">
+                        <a href="#"><i class="fas fa-bars"></i></a>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+        <main class="child">
+            <section class="items">section
+                <article class="sub-items">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet, minima molestiae modi facere maiores doloremque eum inventore laudantium officia iure cum aut incidunt a hic alias accusamus aspernatur placeat architecto!
+
+                </article>
+            </section>
+            <aside class="items">aside</aside>
+        </main>
+        <footer class="child items">
+            footer
+        </footer>
+    </div>
+</body>
+
+</html>
