@@ -1,0 +1,14 @@
+.landing {
+  background-color: #0D6EFD;
+  height: 70vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.footer {
+  background-color: #E8EEF4;
+  height: 30vh;
+}
