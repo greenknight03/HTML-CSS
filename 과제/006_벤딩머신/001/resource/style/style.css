@@ -1,8 +1,11 @@
+@charset "utf-8";
+
 body {
     background-color: #EAE8FE;
-}
-
-.logo {
+    font-family: 'Noto Sans KR' sans-serif;
+  }
+  
+  .logo {
     position: relative;
     width: 386px;
     height: 164px;
