@@ -1,0 +1,39 @@
+@charset "utf-8";
+
+body {
+    background-color: #EAE8FE;
+    font-family: 'Noto Sans KR' sans-serif;
+  }
+  
+  .logo {
+    position: relative;
+    width: 386px;
+    height: 164px;
+    margin-left: 766px;
+  }
+
+.vending-machine {
+    position: absolute;
+    background-color: #fff;
+    width: 360px;
+    height: 545px;
+    margin: 67px 974px 171px 586px;
+  }
+
+.cont-mymoney {
+    position: absolute;
+    background-color: #fff;
+    width: 360px;
+    height: 50px;
+    margin-top: -87px;
+    
+  }
+
+
+  .my-info {
+    position: absolute;
+    background-color: #fff;
+    width: 360px;
+    height: 474px;
+    margin: 138px 586px 171px 974px;
+  }
