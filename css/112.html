@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <style>
+      div {
+        position: relative;
+        width: 500px;
+      }
+
+      img {
+        position: absolute;
+        top: 0;
+        left: 0;
+        clip: rect(100px 400px 500px 100px);
+      }
+    </style>
+</head>
+<body>
+    <div>
+      <img src="https://obj-sg.thewiki.kr/data/eca484eba6acec9584eb939ceb9dbcec9db4ed91b8ec8aa42e6a7067.jpg" alt="">
+    </div>
+</body>
+</html>
+
+
+<!-- 이미지 자를 수 있다. clip:rect(위 오른 아래 왼) 시계방향 반드시 포지션(absolute or fixed)을 줘야 적용된다!!! 0 이면 이미지를 끝까지 다 자른다는 의미라서 0 0 0 0 이면 이미지 안보임 
+요즘음 clippath를 쓴다더라 근데 호환이 아직 잘 안됨 -->
