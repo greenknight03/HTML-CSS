@@ -1,4 +1,6 @@
   @charset "utf-8";
+// pixel단위가 들어가면 false다!
+// ㅌㅌ @debug type-of($100px)==number 은 false다!
 
 
   /* Default */
