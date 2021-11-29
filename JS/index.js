@@ -50,36 +50,7 @@ if (temperature <= 0) {
 
 
 
-  // 나의 나이와, 나의 성별을 저장하는 변수
-let myAge = 26;
-let myGender = 'male';
-
-// 호칭을 담은 변수
-let callOlderBrother = '형';
-let callOlderSister = '누나';
-let callFriend = '친구';
-let callYoungerSister = '여동생';
-let callYoungerBrother = '남동생';
-
-// 상대방의 나이와 성별에 따른 호칭을 리턴하는 함수 whatShouldICall를 완성하세요.
-function whatShouldICallYou(yourAge, yourGender) {
-  if ( myAge === yourAge) {
-    return callFriend;
-  } else if ( myAge > yourAge ) {
-    if  ( yourGender === 'male' ) {
-      return callYoungerBrother;
-    }  else if ( yourGender === 'female') {
-      return callYoungerSister;
-    }
-  } else {
-    if ( yourGender === 'male') {
-      return callOlderBrother;
-    } else if ( yourGender === 'female') {
-      return callOlderSister
-    }
-  }
-}
-
+ // 서열정리 
 // 나의 나이와, 나의 성별을 저장하는 변수입니다.
 let myAge = 26;
 let myGender = 'male';
